@@ -4,7 +4,6 @@ import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 
-
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
@@ -39,9 +38,8 @@ const Navbar = () => {
       className={`${
         styles.paddingX
       } w-full flex items-center py-5 fixed top-0 z-20 transition-all duration-300 ${
-        scrolled ? "bg-opacity-80 bg-black shadow-lg" : "bg-transparent"
+        scrolled ? "bg-transparent shadow-none" : "bg-black bg-opacity-80 shadow-lg"
       }`}
-      style={{ marginTop: "20px" }} // Add margin at the top
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
@@ -52,16 +50,16 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-    
+          {/* Logo or brand name can go here */}
         </Link>
 
-        <ul className="list-none hidden sm:flex flex-row gap-8">
+        <ul className="list-none hidden sm:flex flex-row gap-8 mt-10">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
               className={`${
                 active === nav.title ? "text-yellow-400" : "text-white"
-              } hover:text-yellow-400 transition-colors text-[20px] font-medium cursor-pointer`}
+              } hover:text-yellow-400 hover:underline transition-colors text-[22px] font-medium cursor-pointer`}
               onClick={() => {
                 if (nav.isDownload) {
                   handleResumeDownload(nav.downloadLink);

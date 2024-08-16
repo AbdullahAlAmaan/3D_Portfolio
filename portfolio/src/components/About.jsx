@@ -43,18 +43,17 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
-      >
-        I am a second-year Computer Engineering student at the University of
-        Waterloo, specializing in front-end technologies including React,
-        JavaScript, and TypeScript. My growing interest in AI and game
-        development parallels my enthusiasm for front-end development. Looking
-        ahead, I am eager to leverage my technical expertise and passion for
-        innovation to contribute to transformative projects in these rapidly
-        advancing sectors.
-      </motion.p>
+      <div className='w-full flex'>
+  <motion.p
+    variants={fadeIn("", "", 0.1, 1)}
+    className='mt-10 bg-black bg-opacity-75 text-white rounded-lg max-w-3xl'
+  >
+    <p className='text-secondary text-[17px] leading-[30px] font-bold'>
+    I am a second-year Computer Engineering student at the University of Waterloo, specializing in full stack development with proficiency in C++ and Python. My technical skills enable me to create dynamic, responsive applications, and I am eager to integrate AI and ML features into my projects to enhance functionality and innovation. I am passionate about leveraging my expertise to contribute to impactful and transformative projects in the tech industry.
+    </p>
+  </motion.p>
+</div>
+
 {/* 
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
