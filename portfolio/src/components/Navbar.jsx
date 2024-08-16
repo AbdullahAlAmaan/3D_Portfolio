@@ -4,6 +4,7 @@ import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 
+
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
@@ -51,7 +52,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-      
+    
         </Link>
 
         <ul className="list-none hidden sm:flex flex-row gap-8">
@@ -59,8 +60,8 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-[#f6c647]" : "text-white"
-              } hover:text-yellow-400 transition-colors text-[25px] font-medium cursor-pointer`}
+                active === nav.title ? "text-yellow-400" : "text-white"
+              } hover:text-yellow-400 transition-colors text-[20px] font-medium cursor-pointer`}
               onClick={() => {
                 if (nav.isDownload) {
                   handleResumeDownload(nav.downloadLink);

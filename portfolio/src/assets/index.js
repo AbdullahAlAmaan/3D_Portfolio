@@ -14,9 +14,17 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import Pusher from "./tech/Pusher.png"
-
 import Python from "./tech/Python.png"
 import cpp from "./tech/cpp.png"
+import Netlify from "./tech/Netlify.png"
+import LinkedIn from "./LinkedIn.png"
+import Email from "./Email.png"
+
+
+
+import Filmatic from "./Projects/Filmatic.png"
+import MicroMemoirs from "./Projects/MicroMemoirs.png"
+import LekhaLekhi from "./Projects/LekhaLekhi.png"
 
 
 
@@ -47,5 +55,11 @@ export {
   Electrium,
   InterCloud,
   NIBIR,
-  Pusher
+  Pusher,
+  Filmatic,
+  MicroMemoirs,
+  Netlify,
+  LekhaLekhi,
+  LinkedIn,
+  Email
 };

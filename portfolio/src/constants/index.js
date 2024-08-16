@@ -15,8 +15,13 @@ import {
   Python,
   cpp,
   Pusher,
-  VHDL
+  VHDL,
+  Filmatic,
+  MicroMemoirs,
+  Netlify,
+  LekhaLekhi,
 } from "../assets";
+
 
 export const navLinks = [
   {
@@ -28,8 +33,10 @@ export const navLinks = [
     title: "Work",
   },
   {
-    id: "contact",
-    title: "Contact",
+    id: "resume",
+    title: "Resume",
+    isDownload: true,
+    downloadLink: "/AMAAN MAIN RESUME.pdf"
   },
 ];
 
@@ -159,41 +166,15 @@ const experiences = [
   },
 ];
 
-// const testimonials = [
-//   {
-//     testimonial:
-//       "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-//     name: "Sara Lee",
-//     designation: "CFO",
-//     company: "Acme Co",
-//     image: "https://randomuser.me/api/portraits/women/4.jpg",
-//   },
-//   {
-//     testimonial:
-//       "I've never met a web developer who truly cares about their clients' success like Rick does.",
-//     name: "Chris Brown",
-//     designation: "COO",
-//     company: "DEF Corp",
-//     image: "https://randomuser.me/api/portraits/men/5.jpg",
-//   },
-//   {
-//     testimonial:
-//       "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-//     name: "Lisa Wang",
-//     designation: "CTO",
-//     company: "456 Enterprises",
-//     image: "https://randomuser.me/api/portraits/women/6.jpg",
-//   },
-// ];
 
 const projects = [
   {
     name: "Filmatic",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      " Movie and TV show platform designed to enhance user engagement through personalized features such as Watch Later and Watch Again. It streamlines content discovery with an intuitive interface, advanced filtering, and search capabilities, allowing users to find content tailored to their preferences. The platform's responsive design ensures seamless accessibility and improved user interaction across various devices, leading to increased user retention and satisfaction.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
@@ -201,17 +182,18 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Tailwind CSS",
         color: "pink-text-gradient",
       },
     ],
-    image: reactjs,
+    image: Filmatic,
     source_code_link: "https://github.com/AbdullahAlAmaan/Filmatic",
+    demo_link: "https://filmatic.netlify.app/",
   },
   {
     name: "Micromemoirs",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "MicroMemoirs is a microblogging platform designed to offer users a robust social experience. It allows users to follow, unfollow, message others, and update their profiles. The platform includes interactive features such as profile customization with picture uploads and real-time status updates, enhancing user engagement and personalization. Built using Python and Flask, MicroMemoirs provides a streamlined, responsive interface for dynamic social interactions.",
     tags: [
       {
         name: "Python",
@@ -226,13 +208,34 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: html,
+    image: MicroMemoirs,
     source_code_link: "https://github.com/AbdullahAlAmaan/MicroMemoirs",
   },
   {
+    name: "LekhaLekhi",
+    description:
+      " LekhaLekhi is a user-focused blogging platform where authenticated users can create, publish, and manage their blogs. Each blog is displayed on the user's main page, and the platform allows for easy deletion of content. The system ensures a seamless and personalized experience, enabling users to effortlessly share their thoughts and ideas.",
+    tags: [
+      {
+        name: "Node",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: LekhaLekhi,
+    source_code_link: "https://github.com/AbdullahAlAmaan/LekhaLekhi",
+    demo_link: "https://filmatic.netlify.app/",
+  },  
+  {
     name: "ETF-Portfolio-Management-System",
-    description: [" • Demonstrated expertise in object-oriented programming, dynamic memory management, and linked lists, completing a multi-phase project with a focus on financial data structures.",
-    "• Efficiently executed algorithms for data sorting and financial calculations, demonstrating problem-solving skills in a structured programming environment."],
+    description: [" ETF Portfolio Management System is a comprehensive tool designed to manage and analyze ETF portfolios through advanced financial data structures. The system employs object-oriented programming and dynamic memory management to efficiently handle complex financial data, with a focus on linked lists. It executes sophisticated algorithms for data sorting and financial calculations, ensuring accurate and effective portfolio management."],
     tags: [
       {
         name: "C++",
@@ -245,7 +248,7 @@ const projects = [
   },
   {
     name: "IntelliTraffic Control System",
-    description: [" • Engineered a traffic light control system using VHDL and FPGA boards, leveraging state machine concepts to simulate and manage traffic flow dynamics effectively. • Performed comprehensive system simulations and real-world testing on FPGA platforms, enhancing traffic light coordination and achieving robust performance with precise state transitions.• Optimized the FPGA-based system to reduce logic utilization by 15%, ensuring efficient operation and demonstrating advanced skills in digital circuit design and real-time embedded system applications."],
+    description: [" IntelliTraffic Control System is a sophisticated solution designed to manage and optimize traffic flow using state machine principles. The system simulates and controls traffic lights on FPGA platforms, ensuring smooth and efficient coordination of traffic signals. Through comprehensive simulations and real-world testing, IntelliTraffic delivers precise state transitions, enhancing overall traffic management. The system is also optimized for efficient operation, reducing logic utilization by 15%, making it a robust and effective tool for modern traffic control."],
     tags: [
       {
         name: "VHDL",
