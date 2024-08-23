@@ -49,7 +49,7 @@ const About = () => {
     className='mt-10 bg-black bg-opacity-75 text-white rounded-lg max-w-3xl'
   >
     <p className='text-secondary text-[17px] leading-[30px] font-bold'>
-    I am a second-year Computer Engineering student at the University of Waterloo, specializing in full stack development with proficiency in C++ and Python. My technical skills enable me to create dynamic, responsive applications, and I am eager to integrate AI and ML features into my projects to enhance functionality and innovation. I am passionate about leveraging my expertise to contribute to impactful and transformative projects in the tech industry.
+    I am a second-year Computer Engineering student at the University of Waterloo, specializing in full stack development with proficiency in C++ and Python. My technical skills enable me to create dynamic, responsive applications, and I am eager to integrate AI and ML features into my projects to enhance functionality and innovation. I am passionate about utilising my expertise to contribute to impactful and transformative projects in the tech industry.
     </p>
   </motion.p>
 </div>
